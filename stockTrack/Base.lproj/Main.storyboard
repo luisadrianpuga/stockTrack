@@ -23,6 +23,7 @@
                         <segue destination="2gj-y9-UbG" kind="relationship" relationship="viewControllers" id="BAP-LY-8tF"/>
                         <segue destination="RU7-Dp-heW" kind="relationship" relationship="viewControllers" id="dIB-43-q8v"/>
                         <segue destination="cif-Jr-UwG" kind="relationship" relationship="viewControllers" id="Zar-Vj-y5g"/>
+                        <segue destination="PAS-oQ-z1H" kind="relationship" relationship="viewControllers" id="tWR-HY-n41"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -136,8 +137,44 @@
             </objects>
             <point key="canvasLocation" x="386" y="300"/>
         </scene>
+        <!--Favorites-->
+        <scene sceneID="YPK-Wn-6Th">
+            <objects>
+                <navigationController title="Favorites" id="PAS-oQ-z1H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="rLq-Uv-uCZ">
+                        <imageReference key="image" image="gear" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="96V-lf-NRB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KHP-Q3-A6x" kind="relationship" relationship="rootViewController" id="McS-St-w3J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTI-JS-Seb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="300"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="HZk-9M-8aV">
+            <objects>
+                <viewController title="Settings" id="KHP-Q3-A6x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APf-YL-cqi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ytf-ek-SUk"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="3vs-QS-2D8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxH-rr-ZpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="986"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>

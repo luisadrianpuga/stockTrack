@@ -15,12 +15,12 @@ class StockTableViewCell: UITableViewCell {
     static let identifier = "StockTableViewCell"
     
     //Subview
-    private let nameLabel: UILabel = {
+    private let tickerLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 24, weight: .medium)
         return label
     }()
-    private let tickerLabel: UILabel = {
+    private let nameLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .regular)
         return label
@@ -51,8 +51,8 @@ class StockTableViewCell: UITableViewCell {
         priceLabel.sizeToFit()
         tickerLabel.sizeToFit()
         
-        nameLabel.frame = CGRect(x: 25, y: 0, width: contentView.frame.size.width/2, height: contentView.frame.size.height/2)
-        tickerLabel.frame = CGRect(x: 25, y: contentView.frame.size.height/2, width: contentView.frame.size.width/2, height: contentView.frame.size.height/2)
+        tickerLabel.frame = CGRect(x: 25, y: 0, width: contentView.frame.size.width/2, height: contentView.frame.size.height/2)
+        nameLabel.frame = CGRect(x: 25, y: contentView.frame.size.height/2, width: contentView.frame.size.width/2, height: contentView.frame.size.height/2)
         priceLabel.frame = CGRect(x: contentView.frame.size.width/2, y: 0, width: (contentView.frame.size.width/2)-15, height: contentView.frame.size.height)
     }
     //Config
