@@ -33,7 +33,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Stocks"
+        DispatchQueue.main.async {
+            self.title = "Search"
+        }
+        
         view.addSubview(tableView)
         tableView.dataSource  = self
         tableView.delegate = self
@@ -76,5 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    
 }
 
